@@ -229,7 +229,7 @@ def entry_ls(ctx, fields, today, use_reports, **conditions):
     as they developing new version of API and they are able to see in the future
     and also longer into past.
     """
-    config = ctx.obj.get('config')
+    config = ctx.obj['config']
     theme = themes.get(config.theme)
 
     if today:
